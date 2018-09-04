@@ -1,10 +1,11 @@
 package jp.techacademy.shohei.yamamoto.javalog;
-
 import android.util.Log;
 
 class Human extends Animal implements Thinkable{
     //クラス変数
     static String to_jp = "人";
+    //メンバ変数
+    String hobby;
 
     //コンストラクタ
     public Human(String name,int age,String hobby){
@@ -20,7 +21,7 @@ class Human extends Animal implements Thinkable{
     //メンバ関数
     @Override
     public void  say() {
-        Log.d("javatest", "私の名前は"+this.name + "です。"+"年は"+ this.age + "です。");
+        Log.d("javatest", "私の名前は"+this.name + "です。"+"年は"+ this.age + "歳です。");
     }
 
     public void  think(){
